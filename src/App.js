@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import TodoList from './TodoList';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faThList } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <FontAwesomeIcon icon={faThList} size="3x" color="#FBE168" />
+      <h1 style={{ color: "#939393" }}>
+        Today
+    </h1>
+      <TodoList />
     </div>
   );
 }
